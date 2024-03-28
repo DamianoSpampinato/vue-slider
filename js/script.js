@@ -58,5 +58,7 @@ createApp({
         };
     },
     methods: {
+        
     }
 }).mount('#app');
+console.log(slides[0].image);
