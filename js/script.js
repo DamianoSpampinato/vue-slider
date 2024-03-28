@@ -58,7 +58,20 @@ createApp({
         };
     },
     methods: {
-        
+        buttonNext : function(){
+            if(this.activeItem < slides.length - 1 ){
+                this.activeItem++
+            } else{
+                this.activeItem = 0
+            }
+        },
+        buttonPrevious : function() {
+            if(this.activeItem > 0 ){
+                this.activeItem--
+            }else{
+                this.activeItem = slides.length - 1
+            } 
+        }
     }
 }).mount('#app');
 console.log(slides[0].image);
